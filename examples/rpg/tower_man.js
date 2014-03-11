@@ -309,8 +309,10 @@
       Q.scene("level1",function(stage) {
         var map = stage.collisionLayer(new Q.TowerManMap());
         map.setup();
+        
 
-        stage.insert(new Q.Player(Q.tilePos(10,7)));
+        var player = stage.insert(new Q.Player(Q.tilePos(10,7)));
+        stage.add("viewport").follow(player);
 
         // stage.insert(new Q.Enemy(Q.tilePos(10,4)));
         // stage.insert(new Q.Enemy(Q.tilePos(15,10)));
