@@ -44,18 +44,6 @@
           // for easy reference
           var p = this.entity.p;
 
-          p.xTile = function(){
-            return Math.round((this.x - 48)/32);
-          }
-          p.yTile = function(){
-            return Math.round((this.y - 48)/32);
-          }
-
-          // if(Math.random() > .95){
-            // console.log(' x: ', p.x, ' vx: ', p.vx, ' destX: ', p.destX, ' y: ', p.y, ' vy: ', p.vy, ' destY: ', p.destY, ' moving: ', p.moving);
-            // console.log(' xTile: ', p.xTile());
-          // }
-
           if(p.vx==0 && p.vy==0){
             p.moving = null;
           }
